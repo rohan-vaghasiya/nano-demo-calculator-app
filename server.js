@@ -13,7 +13,7 @@ const baseRouter = express.Router();
 const { addController, subtractController } = require('./src/calculator.controller')
 
 baseRouter.get('/greeting', (req, res) => {
-    return res.send('Hello world');
+    return res.send('Hello world!');
 });
 
 baseRouter.post('/add', addController);
